@@ -1,0 +1,196 @@
+[0.000000] (-) TimerEvent: {}
+[0.000243] (tooru_teleop) JobQueued: {'identifier': 'tooru_teleop', 'dependencies': OrderedDict()}
+[0.000296] (tooru_teleop) JobStarted: {'identifier': 'tooru_teleop'}
+[0.013893] (tooru_teleop) JobProgress: {'identifier': 'tooru_teleop', 'progress': 'cmake'}
+[0.014328] (tooru_teleop) Command: {'cmd': ['/usr/bin/cmake', '/home/ntlab/tooru_ros2_ws/src/tooru_teleop', '-DCMAKE_INSTALL_PREFIX=/home/ntlab/tooru_ros2_ws/install/tooru_teleop'], 'cwd': '/home/ntlab/tooru_ros2_ws/build/tooru_teleop', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ntlab'), ('LC_TIME', 'ja_JP.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ntlab'), ('OLDPWD', '/home/ntlab'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('MANAGERPID', '1785'), ('SYSTEMD_EXEC_PID', '2172'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3942'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ntlab'), ('JOURNAL_STREAM', '8:38750'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ntlab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ntlab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ntlab-H5-TGLABW11:@/tmp/.ICE-unix/2153,unix/ntlab-H5-TGLABW11:/tmp/.ICE-unix/2153'), ('INVOCATION_ID', 'bce5bcf05dab46a29cf28e47b5ba375b'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:351ad835-5653-4888-9594-1a76be7f4dbe'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ntlab/tooru_ros2_ws/build/tooru_teleop'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098605] (-) TimerEvent: {}
+[0.137524] (tooru_teleop) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.198755] (-) TimerEvent: {}
+[0.229856] (tooru_teleop) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.243362] (tooru_teleop) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.298966] (-) TimerEvent: {}
+[0.308975] (tooru_teleop) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.315940] (tooru_teleop) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.316437] (tooru_teleop) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.317122] (tooru_teleop) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.320598] (tooru_teleop) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.395226] (tooru_teleop) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.399062] (-) TimerEvent: {}
+[0.402409] (tooru_teleop) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.402694] (tooru_teleop) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.403016] (tooru_teleop) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.406427] (tooru_teleop) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.499191] (-) TimerEvent: {}
+[0.568312] (tooru_teleop) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[0.599334] (-) TimerEvent: {}
+[0.664391] (tooru_teleop) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.699468] (-) TimerEvent: {}
+[0.705982] (tooru_teleop) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.711117] (tooru_teleop) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.720762] (tooru_teleop) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.737754] (tooru_teleop) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.759275] (tooru_teleop) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.799645] (-) TimerEvent: {}
+[0.879042] (tooru_teleop) StdoutLine: {'line': b'-- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.899808] (-) TimerEvent: {}
+[0.947578] (tooru_teleop) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.951698] (tooru_teleop) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.000006] (-) TimerEvent: {}
+[1.076722] (tooru_teleop) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.100171] (-) TimerEvent: {}
+[1.141465] (tooru_teleop) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.190875] (tooru_teleop) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.200363] (-) TimerEvent: {}
+[1.201472] (tooru_teleop) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.300564] (-) TimerEvent: {}
+[1.301923] (tooru_teleop) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.302245] (tooru_teleop) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.400759] (-) TimerEvent: {}
+[1.413584] (tooru_teleop) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.415800] (tooru_teleop) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.500953] (-) TimerEvent: {}
+[1.601471] (-) TimerEvent: {}
+[1.609828] (tooru_teleop) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.3 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[1.682444] (tooru_teleop) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.701549] (-) TimerEvent: {}
+[1.776826] (tooru_teleop) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.801736] (-) TimerEvent: {}
+[1.902213] (-) TimerEvent: {}
+[1.911382] (tooru_teleop) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.911611] (tooru_teleop) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.911690] (tooru_teleop) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.912141] (tooru_teleop) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.912847] (tooru_teleop) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.913395] (tooru_teleop) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.914258] (tooru_teleop) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.914455] (tooru_teleop) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.914766] (tooru_teleop) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.916295] (tooru_teleop) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.926397] (tooru_teleop) StdoutLine: {'line': b'-- Generating done\n'}
+[1.928044] (tooru_teleop) StdoutLine: {'line': b'-- Build files have been written to: /home/ntlab/tooru_ros2_ws/build/tooru_teleop\n'}
+[1.938629] (tooru_teleop) CommandEnded: {'returncode': 0}
+[1.940084] (tooru_teleop) JobProgress: {'identifier': 'tooru_teleop', 'progress': 'build'}
+[1.942378] (tooru_teleop) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ntlab/tooru_ros2_ws/build/tooru_teleop', '--', '-j16', '-l16'], 'cwd': '/home/ntlab/tooru_ros2_ws/build/tooru_teleop', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ntlab'), ('LC_TIME', 'ja_JP.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ntlab'), ('OLDPWD', '/home/ntlab'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('MANAGERPID', '1785'), ('SYSTEMD_EXEC_PID', '2172'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3942'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ntlab'), ('JOURNAL_STREAM', '8:38750'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ntlab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ntlab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ntlab-H5-TGLABW11:@/tmp/.ICE-unix/2153,unix/ntlab-H5-TGLABW11:/tmp/.ICE-unix/2153'), ('INVOCATION_ID', 'bce5bcf05dab46a29cf28e47b5ba375b'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:351ad835-5653-4888-9594-1a76be7f4dbe'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ntlab/tooru_ros2_ws/build/tooru_teleop'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.002421] (-) TimerEvent: {}
+[2.016749] (tooru_teleop) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/teleop_joystick_input.dir/src/joystick.cpp.o\x1b[0m\n'}
+[2.102595] (-) TimerEvent: {}
+[2.203086] (-) TimerEvent: {}
+[2.303622] (-) TimerEvent: {}
+[2.404063] (-) TimerEvent: {}
+[2.504581] (-) TimerEvent: {}
+[2.605082] (-) TimerEvent: {}
+[2.705584] (-) TimerEvent: {}
+[2.806148] (-) TimerEvent: {}
+[2.906685] (-) TimerEvent: {}
+[3.007299] (-) TimerEvent: {}
+[3.107776] (-) TimerEvent: {}
+[3.208207] (-) TimerEvent: {}
+[3.308736] (-) TimerEvent: {}
+[3.409224] (-) TimerEvent: {}
+[3.509771] (-) TimerEvent: {}
+[3.610327] (-) TimerEvent: {}
+[3.710848] (-) TimerEvent: {}
+[3.811382] (-) TimerEvent: {}
+[3.911774] (-) TimerEvent: {}
+[4.012193] (-) TimerEvent: {}
+[4.112683] (-) TimerEvent: {}
+[4.213184] (-) TimerEvent: {}
+[4.313653] (-) TimerEvent: {}
+[4.318287] (tooru_teleop) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ntlab/tooru_ros2_ws/src/tooru_teleop/src/joystick.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool convertJoyToCmd(const std::vector<float, std::allocator<float> >&, const std::vector<int, std::allocator<int> >&, std::unique_ptr<geometry_msgs::msg::TwistStamped_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::TwistStamped_<std::allocator<void> > > >&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.318502] (tooru_teleop) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ntlab/tooru_ros2_ws/src/tooru_teleop/src/joystick.cpp:58:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbuttons\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.318593] (tooru_teleop) StderrLine: {'line': b'   58 | yToCmd(const std::vector<float>& axes, \x1b[01;35m\x1b[Kconst std::vector<int>& buttons\x1b[m\x1b[K,\n'}
+[4.318681] (tooru_teleop) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[4.318776] (tooru_teleop) StderrLine: {'line': b'\n'}
+[4.413858] (-) TimerEvent: {}
+[4.514331] (-) TimerEvent: {}
+[4.614878] (-) TimerEvent: {}
+[4.715394] (-) TimerEvent: {}
+[4.815860] (-) TimerEvent: {}
+[4.916263] (-) TimerEvent: {}
+[5.016796] (-) TimerEvent: {}
+[5.117301] (-) TimerEvent: {}
+[5.217810] (-) TimerEvent: {}
+[5.318318] (-) TimerEvent: {}
+[5.418789] (-) TimerEvent: {}
+[5.519353] (-) TimerEvent: {}
+[5.619844] (-) TimerEvent: {}
+[5.720321] (-) TimerEvent: {}
+[5.820879] (-) TimerEvent: {}
+[5.921388] (-) TimerEvent: {}
+[6.021891] (-) TimerEvent: {}
+[6.122415] (-) TimerEvent: {}
+[6.222954] (-) TimerEvent: {}
+[6.323476] (-) TimerEvent: {}
+[6.423900] (-) TimerEvent: {}
+[6.524324] (-) TimerEvent: {}
+[6.624835] (-) TimerEvent: {}
+[6.725317] (-) TimerEvent: {}
+[6.825765] (-) TimerEvent: {}
+[6.926258] (-) TimerEvent: {}
+[7.026743] (-) TimerEvent: {}
+[7.127318] (-) TimerEvent: {}
+[7.227788] (-) TimerEvent: {}
+[7.328228] (-) TimerEvent: {}
+[7.428674] (-) TimerEvent: {}
+[7.529053] (-) TimerEvent: {}
+[7.629548] (-) TimerEvent: {}
+[7.729922] (-) TimerEvent: {}
+[7.830350] (-) TimerEvent: {}
+[7.930739] (-) TimerEvent: {}
+[8.031237] (-) TimerEvent: {}
+[8.131679] (-) TimerEvent: {}
+[8.232068] (-) TimerEvent: {}
+[8.332593] (-) TimerEvent: {}
+[8.433147] (-) TimerEvent: {}
+[8.533668] (-) TimerEvent: {}
+[8.634167] (-) TimerEvent: {}
+[8.734669] (-) TimerEvent: {}
+[8.835243] (-) TimerEvent: {}
+[8.935736] (-) TimerEvent: {}
+[9.036156] (-) TimerEvent: {}
+[9.136687] (-) TimerEvent: {}
+[9.237123] (-) TimerEvent: {}
+[9.337627] (-) TimerEvent: {}
+[9.438173] (-) TimerEvent: {}
+[9.538621] (-) TimerEvent: {}
+[9.639177] (-) TimerEvent: {}
+[9.739723] (-) TimerEvent: {}
+[9.840223] (-) TimerEvent: {}
+[9.940703] (-) TimerEvent: {}
+[10.041132] (-) TimerEvent: {}
+[10.141589] (-) TimerEvent: {}
+[10.242123] (-) TimerEvent: {}
+[10.304338] (tooru_teleop) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libteleop_joystick_input.so\x1b[0m\n'}
+[10.342321] (-) TimerEvent: {}
+[10.442835] (-) TimerEvent: {}
+[10.543369] (-) TimerEvent: {}
+[10.643845] (-) TimerEvent: {}
+[10.744378] (-) TimerEvent: {}
+[10.801989] (tooru_teleop) StdoutLine: {'line': b'[100%] Built target teleop_joystick_input\n'}
+[10.813513] (tooru_teleop) CommandEnded: {'returncode': 0}
+[10.844485] (-) TimerEvent: {}
+[10.851795] (tooru_teleop) JobProgress: {'identifier': 'tooru_teleop', 'progress': 'install'}
+[10.865269] (tooru_teleop) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ntlab/tooru_ros2_ws/build/tooru_teleop'], 'cwd': '/home/ntlab/tooru_ros2_ws/build/tooru_teleop', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ntlab'), ('LC_TIME', 'ja_JP.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ntlab'), ('OLDPWD', '/home/ntlab'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('MANAGERPID', '1785'), ('SYSTEMD_EXEC_PID', '2172'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3942'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ntlab'), ('JOURNAL_STREAM', '8:38750'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ntlab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ntlab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ntlab-H5-TGLABW11:@/tmp/.ICE-unix/2153,unix/ntlab-H5-TGLABW11:/tmp/.ICE-unix/2153'), ('INVOCATION_ID', 'bce5bcf05dab46a29cf28e47b5ba375b'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:351ad835-5653-4888-9594-1a76be7f4dbe'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ntlab/tooru_ros2_ws/build/tooru_teleop'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.875328] (tooru_teleop) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.875588] (tooru_teleop) StdoutLine: {'line': b'-- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_teleop/lib/libteleop_joystick_input.so\n'}
+[10.885267] (tooru_teleop) StdoutLine: {'line': b'-- Set runtime path of "/home/ntlab/tooru_ros2_ws/install/tooru_teleop/lib/libteleop_joystick_input.so" to ""\n'}
+[10.885567] (tooru_teleop) StdoutLine: {'line': b'-- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/ament_index/resource_index/package_run_dependencies/tooru_teleop\n'}
+[10.885758] (tooru_teleop) StdoutLine: {'line': b'-- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/ament_index/resource_index/parent_prefix_path/tooru_teleop\n'}
+[10.885934] (tooru_teleop) StdoutLine: {'line': b'-- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/environment/ament_prefix_path.sh\n'}
+[10.886103] (tooru_teleop) StdoutLine: {'line': b'-- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/environment/ament_prefix_path.dsv\n'}
+[10.886267] (tooru_teleop) StdoutLine: {'line': b'-- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/environment/path.sh\n'}
+[10.886411] (tooru_teleop) StdoutLine: {'line': b'-- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/environment/path.dsv\n'}
+[10.886569] (tooru_teleop) StdoutLine: {'line': b'-- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/local_setup.bash\n'}
+[10.886723] (tooru_teleop) StdoutLine: {'line': b'-- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/local_setup.sh\n'}
+[10.886847] (tooru_teleop) StdoutLine: {'line': b'-- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/local_setup.zsh\n'}
+[10.886995] (tooru_teleop) StdoutLine: {'line': b'-- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/local_setup.dsv\n'}
+[10.887133] (tooru_teleop) StdoutLine: {'line': b'-- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/package.dsv\n'}
+[10.887322] (tooru_teleop) StdoutLine: {'line': b'-- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/ament_index/resource_index/packages/tooru_teleop\n'}
+[10.887520] (tooru_teleop) StdoutLine: {'line': b'-- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/ament_index/resource_index/rclcpp_components/tooru_teleop\n'}
+[10.887687] (tooru_teleop) StdoutLine: {'line': b'-- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/cmake/tooru_teleopConfig.cmake\n'}
+[10.887835] (tooru_teleop) StdoutLine: {'line': b'-- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/cmake/tooru_teleopConfig-version.cmake\n'}
+[10.887985] (tooru_teleop) StdoutLine: {'line': b'-- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/package.xml\n'}
+[10.890417] (tooru_teleop) CommandEnded: {'returncode': 0}
+[10.944775] (-) TimerEvent: {}
+[10.981921] (tooru_teleop) JobEnded: {'identifier': 'tooru_teleop', 'rc': 0}
+[10.983077] (-) EventReactorShutdown: {}

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ntlab/mobile_ros2_ws/src/tooru_teleop
+CMAKE_SOURCE_DIR = /home/ntlab/tooru_ros2_ws/src/tooru_teleop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ntlab/mobile_ros2_ws/build/tooru_teleop
+CMAKE_BINARY_DIR = /home/ntlab/tooru_ros2_ws/build/tooru_teleop
 
 # Utility rule file for tooru_teleop_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/tooru_teleop_uninstall.dir/compiler_depend.make
 include CMakeFiles/tooru_teleop_uninstall.dir/progress.make
 
 CMakeFiles/tooru_teleop_uninstall:
-	/usr/bin/cmake -P /home/ntlab/mobile_ros2_ws/build/tooru_teleop/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/ntlab/tooru_ros2_ws/build/tooru_teleop/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 tooru_teleop_uninstall: CMakeFiles/tooru_teleop_uninstall
 tooru_teleop_uninstall: CMakeFiles/tooru_teleop_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/tooru_teleop_uninstall.dir/clean:
 .PHONY : CMakeFiles/tooru_teleop_uninstall.dir/clean
 
 CMakeFiles/tooru_teleop_uninstall.dir/depend:
-	cd /home/ntlab/mobile_ros2_ws/build/tooru_teleop && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ntlab/mobile_ros2_ws/src/tooru_teleop /home/ntlab/mobile_ros2_ws/src/tooru_teleop /home/ntlab/mobile_ros2_ws/build/tooru_teleop /home/ntlab/mobile_ros2_ws/build/tooru_teleop /home/ntlab/mobile_ros2_ws/build/tooru_teleop/CMakeFiles/tooru_teleop_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ntlab/tooru_ros2_ws/build/tooru_teleop && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ntlab/tooru_ros2_ws/src/tooru_teleop /home/ntlab/tooru_ros2_ws/src/tooru_teleop /home/ntlab/tooru_ros2_ws/build/tooru_teleop /home/ntlab/tooru_ros2_ws/build/tooru_teleop /home/ntlab/tooru_ros2_ws/build/tooru_teleop/CMakeFiles/tooru_teleop_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tooru_teleop_uninstall.dir/depend
 

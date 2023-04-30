@@ -1,5 +1,5 @@
 CMakeFiles/teleop_joystick_input.dir/src/joystick.cpp.o: \
- /home/ntlab/mobile_ros2_ws/src/tooru_teleop/src/joystick.cpp \
+ /home/ntlab/tooru_ros2_ws/src/tooru_teleop/src/joystick.cpp \
  /usr/include/stdc-predef.h \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joy.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joy__struct.hpp \
