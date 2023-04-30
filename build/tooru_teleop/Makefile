@@ -198,41 +198,41 @@ tooru_teleop_uninstall/fast:
 .PHONY : tooru_teleop_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named teleop_joystick_input
+# Target rules for targets named teleop_teleop_input
 
 # Build rule for target.
-teleop_joystick_input: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 teleop_joystick_input
-.PHONY : teleop_joystick_input
+teleop_teleop_input: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 teleop_teleop_input
+.PHONY : teleop_teleop_input
 
 # fast build rule for target.
-teleop_joystick_input/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_joystick_input.dir/build.make CMakeFiles/teleop_joystick_input.dir/build
-.PHONY : teleop_joystick_input/fast
+teleop_teleop_input/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_teleop_input.dir/build.make CMakeFiles/teleop_teleop_input.dir/build
+.PHONY : teleop_teleop_input/fast
 
-src/joystick.o: src/joystick.cpp.o
-.PHONY : src/joystick.o
+src/teleop.o: src/teleop.cpp.o
+.PHONY : src/teleop.o
 
 # target to build an object file
-src/joystick.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_joystick_input.dir/build.make CMakeFiles/teleop_joystick_input.dir/src/joystick.cpp.o
-.PHONY : src/joystick.cpp.o
+src/teleop.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_teleop_input.dir/build.make CMakeFiles/teleop_teleop_input.dir/src/teleop.cpp.o
+.PHONY : src/teleop.cpp.o
 
-src/joystick.i: src/joystick.cpp.i
-.PHONY : src/joystick.i
+src/teleop.i: src/teleop.cpp.i
+.PHONY : src/teleop.i
 
 # target to preprocess a source file
-src/joystick.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_joystick_input.dir/build.make CMakeFiles/teleop_joystick_input.dir/src/joystick.cpp.i
-.PHONY : src/joystick.cpp.i
+src/teleop.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_teleop_input.dir/build.make CMakeFiles/teleop_teleop_input.dir/src/teleop.cpp.i
+.PHONY : src/teleop.cpp.i
 
-src/joystick.s: src/joystick.cpp.s
-.PHONY : src/joystick.s
+src/teleop.s: src/teleop.cpp.s
+.PHONY : src/teleop.s
 
 # target to generate assembly for a file
-src/joystick.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_joystick_input.dir/build.make CMakeFiles/teleop_joystick_input.dir/src/joystick.cpp.s
-.PHONY : src/joystick.cpp.s
+src/teleop.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_teleop_input.dir/build.make CMakeFiles/teleop_teleop_input.dir/src/teleop.cpp.s
+.PHONY : src/teleop.cpp.s
 
 # Help Target
 help:
@@ -249,10 +249,10 @@ help:
 	@echo "... test"
 	@echo "... tooru_teleop_uninstall"
 	@echo "... uninstall"
-	@echo "... teleop_joystick_input"
-	@echo "... src/joystick.o"
-	@echo "... src/joystick.i"
-	@echo "... src/joystick.s"
+	@echo "... teleop_teleop_input"
+	@echo "... src/teleop.o"
+	@echo "... src/teleop.i"
+	@echo "... src/teleop.s"
 .PHONY : help
 
 

@@ -1,0 +1,6 @@
+Invoking command in '/home/ntlab/tooru_ros2_ws/build/tooru_mobile': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ntlab/tooru_ros2_ws/src/tooru_mobile -DCMAKE_INSTALL_PREFIX=/home/ntlab/tooru_ros2_ws/install/tooru_mobile
+Invoked command in '/home/ntlab/tooru_ros2_ws/build/tooru_mobile' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ntlab/tooru_ros2_ws/src/tooru_mobile -DCMAKE_INSTALL_PREFIX=/home/ntlab/tooru_ros2_ws/install/tooru_mobile
+Invoking command in '/home/ntlab/tooru_ros2_ws/build/tooru_mobile': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ntlab/tooru_ros2_ws/build/tooru_mobile -- -j16 -l16
+Invoked command in '/home/ntlab/tooru_ros2_ws/build/tooru_mobile' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ntlab/tooru_ros2_ws/build/tooru_mobile -- -j16 -l16
+Invoking command in '/home/ntlab/tooru_ros2_ws/build/tooru_mobile': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ntlab/tooru_ros2_ws/build/tooru_mobile
+Invoked command in '/home/ntlab/tooru_ros2_ws/build/tooru_mobile' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ntlab/tooru_ros2_ws/build/tooru_mobile

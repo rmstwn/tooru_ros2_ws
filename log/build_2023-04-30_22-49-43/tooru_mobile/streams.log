@@ -1,0 +1,74 @@
+[0.012s] Invoking command in '/home/ntlab/tooru_ros2_ws/build/tooru_mobile': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ntlab/tooru_ros2_ws/src/tooru_mobile -DCMAKE_INSTALL_PREFIX=/home/ntlab/tooru_ros2_ws/install/tooru_mobile
+[0.044s] -- The C compiler identification is GNU 11.3.0
+[0.079s] -- The CXX compiler identification is GNU 11.3.0
+[0.084s] -- Detecting C compiler ABI info
+[0.123s] -- Detecting C compiler ABI info - done
+[0.128s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.128s] -- Detecting C compile features
+[0.129s] -- Detecting C compile features - done
+[0.131s] -- Detecting CXX compiler ABI info
+[0.177s] -- Detecting CXX compiler ABI info - done
+[0.181s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.181s] -- Detecting CXX compile features
+[0.182s] -- Detecting CXX compile features - done
+[0.183s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.291s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.353s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.375s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.377s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.382s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.390s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.402s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.479s] -- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)
+[0.522s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.523s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.581s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.598s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.628s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.634s] -- Looking for pthread.h
+[0.676s] -- Looking for pthread.h - found
+[0.676s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.718s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.719s] -- Found Threads: TRUE  
+[0.802s] -- Found rclcpp_components: 16.0.3 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.845s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.902s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.955s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.955s] -- Configured cppcheck include dirs: 
+[0.955s] -- Configured cppcheck exclude dirs and/or files: 
+[0.956s] -- Added test 'lint_cmake' to check CMake code style
+[0.956s] -- Added test 'uncrustify' to check C / C++ code style
+[0.956s] -- Configured uncrustify additional arguments: 
+[0.956s] -- Added test 'xmllint' to check XML markup files
+[0.957s] -- Configuring done
+[0.963s] -- Generating done
+[0.964s] -- Build files have been written to: /home/ntlab/tooru_ros2_ws/build/tooru_mobile
+[0.971s] Invoked command in '/home/ntlab/tooru_ros2_ws/build/tooru_mobile' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ntlab/tooru_ros2_ws/src/tooru_mobile -DCMAKE_INSTALL_PREFIX=/home/ntlab/tooru_ros2_ws/install/tooru_mobile
+[0.972s] Invoking command in '/home/ntlab/tooru_ros2_ws/build/tooru_mobile': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ntlab/tooru_ros2_ws/build/tooru_mobile -- -j16 -l16
+[0.999s] [ 50%] [32mBuilding CXX object CMakeFiles/kinematics.dir/src/kinematics.cpp.o[0m
+[2.604s] [01m[K/home/ntlab/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:[m[K In member function ‘[01m[Kvoid tooru_kinematics::TwistToJointPub::twistCB(const ConstSharedPtr&)[m[K’:
+[2.604s] [01m[K/home/ntlab/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:36:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.604s]    36 |            void twistCB([01;35m[Kconst geometry_msgs::msg::TwistStamped::ConstSharedPtr& msg[m[K)
+[2.604s]       |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.604s] 
+[6.619s] [100%] [32m[1mLinking CXX executable kinematics[0m
+[6.896s] [100%] Built target kinematics
+[6.907s] Invoked command in '/home/ntlab/tooru_ros2_ws/build/tooru_mobile' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ntlab/tooru_ros2_ws/build/tooru_mobile -- -j16 -l16
+[6.927s] Invoking command in '/home/ntlab/tooru_ros2_ws/build/tooru_mobile': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ntlab/tooru_ros2_ws/build/tooru_mobile
+[6.932s] -- Install configuration: ""
+[6.932s] -- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_mobile/share/ament_index/resource_index/package_run_dependencies/tooru_mobile
+[6.932s] -- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_mobile/share/ament_index/resource_index/parent_prefix_path/tooru_mobile
+[6.932s] -- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/environment/ament_prefix_path.sh
+[6.932s] -- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/environment/ament_prefix_path.dsv
+[6.932s] -- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/environment/path.sh
+[6.932s] -- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/environment/path.dsv
+[6.932s] -- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/local_setup.bash
+[6.933s] -- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/local_setup.sh
+[6.933s] -- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/local_setup.zsh
+[6.933s] -- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/local_setup.dsv
+[6.933s] -- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/package.dsv
+[6.933s] -- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_mobile/share/ament_index/resource_index/packages/tooru_mobile
+[6.933s] -- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/cmake/tooru_mobileConfig.cmake
+[6.933s] -- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/cmake/tooru_mobileConfig-version.cmake
+[6.933s] -- Installing: /home/ntlab/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/package.xml
+[6.935s] Invoked command in '/home/ntlab/tooru_ros2_ws/build/tooru_mobile' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ntlab/tooru_ros2_ws/build/tooru_mobile

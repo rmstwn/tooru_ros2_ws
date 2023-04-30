@@ -1,0 +1,4 @@
+source;share/tooru_mobile/local_setup.bash
+source;share/tooru_mobile/local_setup.dsv
+source;share/tooru_mobile/local_setup.sh
+source;share/tooru_mobile/local_setup.zsh

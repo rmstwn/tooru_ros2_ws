@@ -1,4 +1,4 @@
-/home/ntlab/tooru_ros2_ws/install/tooru_teleop/lib/libteleop_joystick_input.so
+/home/ntlab/tooru_ros2_ws/install/tooru_teleop/lib/libteleop_teleop_input.so
 /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/ament_index/resource_index/package_run_dependencies/tooru_teleop
 /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/ament_index/resource_index/parent_prefix_path/tooru_teleop
 /home/ntlab/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/environment/ament_prefix_path.sh

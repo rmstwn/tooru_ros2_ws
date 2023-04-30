@@ -1,5 +1,0 @@
-[01m[K/home/ntlab/tooru_ros2_ws/src/tooru_teleop/src/joystick.cpp:[m[K In function ‘[01m[Kbool convertJoyToCmd(const std::vector<float, std::allocator<float> >&, const std::vector<int, std::allocator<int> >&, std::unique_ptr<geometry_msgs::msg::TwistStamped_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::TwistStamped_<std::allocator<void> > > >&)[m[K’:
-[01m[K/home/ntlab/tooru_ros2_ws/src/tooru_teleop/src/joystick.cpp:58:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuttons[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
-   58 | yToCmd(const std::vector<float>& axes, [01;35m[Kconst std::vector<int>& buttons[m[K,
-      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
-
