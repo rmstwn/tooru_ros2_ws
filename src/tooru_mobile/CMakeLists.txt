@@ -11,6 +11,8 @@ set(THIS_PACKAGE_INCLUDE_DEPENDS
   rclcpp_components
   sensor_msgs
   std_msgs
+  Eigen3
+  eigen3_cmake_module
 )
 
 # find dependencies
@@ -30,6 +32,10 @@ add_library(kinematics SHARED src/kinematics.cpp)
 ament_target_dependencies(kinematics PUBLIC ${THIS_PACKAGE_INCLUDE_DEPENDS})
 rclcpp_components_register_nodes(kinematics "tooru_mobile::TwistToJointPub")
 
+ament_target_dependencies(kinematics Eigen3)
+
+ament_export_dependencies(eigen3_cmake_module)
+ament_export_dependencies(Eigen3)
 
 # install(TARGETS
 #   kinematics
@@ -51,7 +57,5 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
-
-
 
 ament_package()

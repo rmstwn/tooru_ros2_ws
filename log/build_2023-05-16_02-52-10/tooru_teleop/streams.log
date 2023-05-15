@@ -1,0 +1,28 @@
+[0.008s] Invoking command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rama/ROS/tooru_ros2_ws/build/tooru_teleop -- -j16 -l16
+[0.038s] [100%] Built target tooru_teleop_input
+[0.044s] Invoked command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rama/ROS/tooru_ros2_ws/build/tooru_teleop -- -j16 -l16
+[0.062s] Invoking command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rama/ROS/tooru_ros2_ws/build/tooru_teleop
+[0.066s] -- Install configuration: ""
+[0.066s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/lib/libtooru_teleop_input.so
+[0.066s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop//launch
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop//launch/teleop.launch.py
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop//launch/__pycache__
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop//launch/__pycache__/teleop.launch.cpython-310.pyc
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop//launch/__pycache__/teleop_launch.cpython-310.pyc
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/ament_index/resource_index/package_run_dependencies/tooru_teleop
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/ament_index/resource_index/parent_prefix_path/tooru_teleop
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/environment/ament_prefix_path.sh
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/environment/ament_prefix_path.dsv
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/environment/path.sh
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/environment/path.dsv
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/local_setup.bash
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/local_setup.sh
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/local_setup.zsh
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/local_setup.dsv
+[0.067s] -- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/package.dsv
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/ament_index/resource_index/packages/tooru_teleop
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/ament_index/resource_index/rclcpp_components/tooru_teleop
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/cmake/tooru_teleopConfig.cmake
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/cmake/tooru_teleopConfig-version.cmake
+[0.067s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/package.xml
+[0.068s] Invoked command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rama/ROS/tooru_ros2_ws/build/tooru_teleop

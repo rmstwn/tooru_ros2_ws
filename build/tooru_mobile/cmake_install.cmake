@@ -118,6 +118,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tooru_mobile/cmake" TYPE FILE FILES "/home/rama/ROS/tooru_ros2_ws/build/tooru_mobile/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tooru_mobile/cmake" TYPE FILE FILES
     "/home/rama/ROS/tooru_ros2_ws/build/tooru_mobile/ament_cmake_core/tooru_mobileConfig.cmake"
     "/home/rama/ROS/tooru_ros2_ws/build/tooru_mobile/ament_cmake_core/tooru_mobileConfig-version.cmake"

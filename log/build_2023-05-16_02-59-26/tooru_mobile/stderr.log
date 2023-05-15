@@ -1,0 +1,7 @@
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:12:10:[m[K [01;31m[Kfatal error: [m[Keigen3/Eigen/Dense.hpp: No such file or directory
+   12 | #include [01;31m[K<eigen3/Eigen/Dense.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/kinematics.dir/build.make:76: CMakeFiles/kinematics.dir/src/kinematics.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/kinematics.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
