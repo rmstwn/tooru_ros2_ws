@@ -1,0 +1,28 @@
+[35m[1mConsolidate compiler generated dependencies of target kinematics[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/kinematics.dir/src/kinematics.cpp.o[0m
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:[m[K In member function ‘[01m[Kvoid tooru_mobile::TwistToJointPub::twistCB(const ConstSharedPtr&)[m[K’:
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:60:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   60 | oid twistCB([01;35m[Kconst geometry_msgs::msg::TwistStamped::ConstSharedPtr& msg[m[K)
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+
+[100%] [32m[1mLinking CXX shared library libkinematics.so[0m
+[100%] Built target kinematics
+-- Install configuration: ""
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/lib/libkinematics.so
+-- Set runtime path of "/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/lib/libkinematics.so" to ""
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/ament_index/resource_index/package_run_dependencies/tooru_mobile
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/ament_index/resource_index/parent_prefix_path/tooru_mobile
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/environment/ament_prefix_path.sh
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/environment/path.sh
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/environment/path.dsv
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/local_setup.bash
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/local_setup.sh
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/local_setup.zsh
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/local_setup.dsv
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/package.dsv
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/ament_index/resource_index/packages/tooru_mobile
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/ament_index/resource_index/rclcpp_components/tooru_mobile
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/cmake/tooru_mobileConfig.cmake
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/cmake/tooru_mobileConfig-version.cmake
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/package.xml

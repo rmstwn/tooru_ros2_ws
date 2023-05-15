@@ -23,9 +23,9 @@ foreach(Dependency IN ITEMS ${THIS_PACKAGE_INCLUDE_DEPENDS})
   find_package(${Dependency} REQUIRED)
 endforeach()
 
-add_library(teleop_teleop_input SHARED src/teleop.cpp)
-ament_target_dependencies(teleop_teleop_input PUBLIC ${THIS_PACKAGE_INCLUDE_DEPENDS})
-rclcpp_components_register_nodes(teleop_teleop_input "tooru_teleop::JoyToTwistPub")
+add_library(tooru_teleop_input SHARED src/teleop.cpp)
+ament_target_dependencies(tooru_teleop_input PUBLIC ${THIS_PACKAGE_INCLUDE_DEPENDS})
+rclcpp_components_register_nodes(tooru_teleop_input "tooru_teleop::JoyToTwistPub")
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -41,7 +41,12 @@ endif()
 
 install(
   TARGETS
-    teleop_teleop_input
+    tooru_teleop_input
+)
+
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}/
 )
 
 ament_package()

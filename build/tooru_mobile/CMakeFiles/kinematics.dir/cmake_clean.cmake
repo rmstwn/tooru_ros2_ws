@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/kinematics.dir/src/kinematics.cpp.o"
   "CMakeFiles/kinematics.dir/src/kinematics.cpp.o.d"
-  "kinematics"
-  "kinematics.pdb"
+  "libkinematics.pdb"
+  "libkinematics.so"
 )
 
 # Per-language clean rules from dependency scanning.

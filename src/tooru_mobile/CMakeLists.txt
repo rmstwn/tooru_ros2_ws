@@ -23,13 +23,22 @@ foreach(Dependency IN ITEMS ${THIS_PACKAGE_INCLUDE_DEPENDS})
   find_package(${Dependency} REQUIRED)
 endforeach()
 
-add_executable(kinematics src/kinematics.cpp)
+# add_executable(kinematics src/kinematics.cpp)
+# ament_target_dependencies(kinematics PUBLIC ${THIS_PACKAGE_INCLUDE_DEPENDS})
+
+add_library(kinematics SHARED src/kinematics.cpp)
 ament_target_dependencies(kinematics PUBLIC ${THIS_PACKAGE_INCLUDE_DEPENDS})
+rclcpp_components_register_nodes(kinematics "tooru_mobile::TwistToJointPub")
 
 
-install(TARGETS
-  kinematics
-  DESTINATION lib/${PROJECT_NAME})
+# install(TARGETS
+#   kinematics
+#   DESTINATION lib/${PROJECT_NAME})
+
+install(
+  TARGETS
+    kinematics
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -42,5 +51,7 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
+
+
 
 ament_package()

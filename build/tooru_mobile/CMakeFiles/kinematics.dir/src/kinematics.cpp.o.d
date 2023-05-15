@@ -1,5 +1,5 @@
 CMakeFiles/kinematics.dir/src/kinematics.cpp.o: \
- /home/ntlab/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp \
+ /home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp \
  /usr/include/stdc-predef.h \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joint_state.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp \
@@ -611,4 +611,16 @@ CMakeFiles/kinematics.dir/src/kinematics.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
- /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
+ /opt/ros/humble/include/rclcpp_components/rclcpp_components/register_node_macro.hpp \
+ /opt/ros/humble/include/class_loader/class_loader/class_loader.hpp \
+ /usr/include/c++/11/cstddef /usr/include/console_bridge/console.h \
+ /usr/include/console_bridge_export.h \
+ /opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp \
+ /opt/ros/humble/include/class_loader/class_loader/exceptions.hpp \
+ /opt/ros/humble/include/class_loader/class_loader/visibility_control.hpp \
+ /opt/ros/humble/include/class_loader/class_loader/meta_object.hpp \
+ /opt/ros/humble/include/class_loader/class_loader/register_macro.hpp \
+ /opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory_template.hpp \
+ /opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory.hpp \
+ /opt/ros/humble/include/rclcpp_components/rclcpp_components/node_instance_wrapper.hpp

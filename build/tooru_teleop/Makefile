@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ntlab/tooru_ros2_ws/src/tooru_teleop
+CMAKE_SOURCE_DIR = /home/rama/ROS/tooru_ros2_ws/src/tooru_teleop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ntlab/tooru_ros2_ws/build/tooru_teleop
+CMAKE_BINARY_DIR = /home/rama/ROS/tooru_ros2_ws/build/tooru_teleop
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,8 +77,8 @@ test/fast: test
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ntlab/tooru_ros2_ws/build/tooru_teleop/CMakeFiles /home/ntlab/tooru_ros2_ws/build/tooru_teleop//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rama/ROS/tooru_ros2_ws/build/tooru_teleop/CMakeFiles /home/rama/ROS/tooru_ros2_ws/build/tooru_teleop//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ntlab/tooru_ros2_ws/build/tooru_teleop/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rama/ROS/tooru_ros2_ws/build/tooru_teleop/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -198,24 +198,24 @@ tooru_teleop_uninstall/fast:
 .PHONY : tooru_teleop_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named teleop_teleop_input
+# Target rules for targets named tooru_teleop_input
 
 # Build rule for target.
-teleop_teleop_input: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 teleop_teleop_input
-.PHONY : teleop_teleop_input
+tooru_teleop_input: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tooru_teleop_input
+.PHONY : tooru_teleop_input
 
 # fast build rule for target.
-teleop_teleop_input/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_teleop_input.dir/build.make CMakeFiles/teleop_teleop_input.dir/build
-.PHONY : teleop_teleop_input/fast
+tooru_teleop_input/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tooru_teleop_input.dir/build.make CMakeFiles/tooru_teleop_input.dir/build
+.PHONY : tooru_teleop_input/fast
 
 src/teleop.o: src/teleop.cpp.o
 .PHONY : src/teleop.o
 
 # target to build an object file
 src/teleop.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_teleop_input.dir/build.make CMakeFiles/teleop_teleop_input.dir/src/teleop.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tooru_teleop_input.dir/build.make CMakeFiles/tooru_teleop_input.dir/src/teleop.cpp.o
 .PHONY : src/teleop.cpp.o
 
 src/teleop.i: src/teleop.cpp.i
@@ -223,7 +223,7 @@ src/teleop.i: src/teleop.cpp.i
 
 # target to preprocess a source file
 src/teleop.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_teleop_input.dir/build.make CMakeFiles/teleop_teleop_input.dir/src/teleop.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tooru_teleop_input.dir/build.make CMakeFiles/tooru_teleop_input.dir/src/teleop.cpp.i
 .PHONY : src/teleop.cpp.i
 
 src/teleop.s: src/teleop.cpp.s
@@ -231,7 +231,7 @@ src/teleop.s: src/teleop.cpp.s
 
 # target to generate assembly for a file
 src/teleop.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_teleop_input.dir/build.make CMakeFiles/teleop_teleop_input.dir/src/teleop.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tooru_teleop_input.dir/build.make CMakeFiles/tooru_teleop_input.dir/src/teleop.cpp.s
 .PHONY : src/teleop.cpp.s
 
 # Help Target
@@ -249,7 +249,7 @@ help:
 	@echo "... test"
 	@echo "... tooru_teleop_uninstall"
 	@echo "... uninstall"
-	@echo "... teleop_teleop_input"
+	@echo "... tooru_teleop_input"
 	@echo "... src/teleop.o"
 	@echo "... src/teleop.i"
 	@echo "... src/teleop.s"

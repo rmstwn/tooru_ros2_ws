@@ -1,5 +1,5 @@
 CMakeFiles/teleop_teleop_input.dir/src/teleop.cpp.o: \
- /home/ntlab/tooru_ros2_ws/src/tooru_teleop/src/teleop.cpp \
+ /home/rama/ROS/tooru_ros2_ws/src/tooru_teleop/src/teleop.cpp \
  /usr/include/stdc-predef.h \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joy.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joy__struct.hpp \

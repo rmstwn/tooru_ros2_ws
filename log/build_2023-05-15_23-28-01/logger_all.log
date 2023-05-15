@@ -1,0 +1,224 @@
+[0.175s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.175s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fd2aefd06d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fd2af7ce740>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fd2af7ce740>>)
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.193s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rama/ROS/tooru_ros2_ws'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/tooru_mobile) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/tooru_mobile) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/tooru_mobile) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/tooru_mobile) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/tooru_mobile) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/tooru_mobile) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/tooru_mobile) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/tooru_mobile) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/tooru_mobile) by extension 'ros'
+[0.202s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tooru_mobile' with type 'ros.ament_cmake' and name 'tooru_mobile'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/tooru_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/tooru_teleop) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/tooru_teleop) by extension 'ignore_ament_install'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/tooru_teleop) by extensions ['colcon_pkg']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/tooru_teleop) by extension 'colcon_pkg'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/tooru_teleop) by extensions ['colcon_meta']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/tooru_teleop) by extension 'colcon_meta'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/tooru_teleop) by extensions ['ros']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/tooru_teleop) by extension 'ros'
+[0.203s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tooru_teleop' with type 'ros.ament_cmake' and name 'tooru_teleop'
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.218s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[0.219s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'tooru_mobile' build argument 'cmake_args' from command line to 'None'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'tooru_mobile' build argument 'cmake_target' from command line to 'None'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'tooru_mobile' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'tooru_mobile' build argument 'cmake_clean_cache' from command line to 'False'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'tooru_mobile' build argument 'cmake_clean_first' from command line to 'False'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'tooru_mobile' build argument 'cmake_force_configure' from command line to 'False'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'tooru_mobile' build argument 'ament_cmake_args' from command line to 'None'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'tooru_mobile' build argument 'catkin_cmake_args' from command line to 'None'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'tooru_mobile' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.251s] DEBUG:colcon.colcon_core.verb:Building package 'tooru_mobile' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rama/ROS/tooru_ros2_ws/build/tooru_mobile', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile', 'merge_install': False, 'path': '/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile', 'symlink_install': False, 'test_result_base': None}
+[0.252s] Level 5:colcon.colcon_core.verb:set package 'tooru_teleop' build argument 'cmake_args' from command line to 'None'
+[0.252s] Level 5:colcon.colcon_core.verb:set package 'tooru_teleop' build argument 'cmake_target' from command line to 'None'
+[0.252s] Level 5:colcon.colcon_core.verb:set package 'tooru_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.252s] Level 5:colcon.colcon_core.verb:set package 'tooru_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.252s] Level 5:colcon.colcon_core.verb:set package 'tooru_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.252s] Level 5:colcon.colcon_core.verb:set package 'tooru_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.252s] Level 5:colcon.colcon_core.verb:set package 'tooru_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.252s] Level 5:colcon.colcon_core.verb:set package 'tooru_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.252s] Level 5:colcon.colcon_core.verb:set package 'tooru_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.252s] DEBUG:colcon.colcon_core.verb:Building package 'tooru_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rama/ROS/tooru_ros2_ws/build/tooru_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop', 'merge_install': False, 'path': '/home/rama/ROS/tooru_ros2_ws/src/tooru_teleop', 'symlink_install': False, 'test_result_base': None}
+[0.252s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.254s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.254s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile' with build type 'ament_cmake'
+[0.254s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile'
+[0.256s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.256s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.256s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.259s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rama/ROS/tooru_ros2_ws/src/tooru_teleop' with build type 'ament_cmake'
+[0.259s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rama/ROS/tooru_ros2_ws/src/tooru_teleop'
+[0.259s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.259s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_mobile': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rama/ROS/tooru_ros2_ws/src/tooru_mobile -DCMAKE_INSTALL_PREFIX=/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile
+[0.265s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rama/ROS/tooru_ros2_ws/src/tooru_teleop -DCMAKE_INSTALL_PREFIX=/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop
+[1.432s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rama/ROS/tooru_ros2_ws/src/tooru_teleop -DCMAKE_INSTALL_PREFIX=/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop
+[1.432s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rama/ROS/tooru_ros2_ws/build/tooru_teleop -- -j16 -l16
+[1.432s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_mobile' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rama/ROS/tooru_ros2_ws/src/tooru_mobile -DCMAKE_INSTALL_PREFIX=/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile
+[1.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_mobile': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rama/ROS/tooru_ros2_ws/build/tooru_mobile -- -j16 -l16
+[7.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_mobile' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rama/ROS/tooru_ros2_ws/build/tooru_mobile -- -j16 -l16
+[7.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_mobile': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rama/ROS/tooru_ros2_ws/build/tooru_mobile
+[7.440s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tooru_mobile)
+[7.441s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_mobile' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rama/ROS/tooru_ros2_ws/build/tooru_mobile
+[7.443s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile' for CMake module files
+[7.444s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile' for CMake config files
+[7.444s] Level 1:colcon.colcon_core.shell:create_environment_hook('tooru_mobile', 'cmake_prefix_path')
+[7.445s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/hook/cmake_prefix_path.ps1'
+[7.445s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/hook/cmake_prefix_path.dsv'
+[7.445s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/hook/cmake_prefix_path.sh'
+[7.446s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/lib'
+[7.446s] Level 1:colcon.colcon_core.shell:create_environment_hook('tooru_mobile', 'ld_library_path_lib')
+[7.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/hook/ld_library_path_lib.ps1'
+[7.447s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/hook/ld_library_path_lib.dsv'
+[7.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/hook/ld_library_path_lib.sh'
+[7.447s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/bin'
+[7.447s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/lib/pkgconfig/tooru_mobile.pc'
+[7.447s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/lib/python3.10/site-packages'
+[7.447s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/bin'
+[7.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/package.ps1'
+[7.449s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/package.dsv'
+[7.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/package.sh'
+[7.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/package.bash'
+[7.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/package.zsh'
+[7.450s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/colcon-core/packages/tooru_mobile)
+[7.455s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rama/ROS/tooru_ros2_ws/build/tooru_teleop -- -j16 -l16
+[7.463s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tooru_mobile)
+[7.464s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile' for CMake module files
+[7.464s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile' for CMake config files
+[7.465s] Level 1:colcon.colcon_core.shell:create_environment_hook('tooru_mobile', 'cmake_prefix_path')
+[7.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/hook/cmake_prefix_path.ps1'
+[7.466s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/hook/cmake_prefix_path.dsv'
+[7.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/hook/cmake_prefix_path.sh'
+[7.466s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/lib'
+[7.466s] Level 1:colcon.colcon_core.shell:create_environment_hook('tooru_mobile', 'ld_library_path_lib')
+[7.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/hook/ld_library_path_lib.ps1'
+[7.467s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/hook/ld_library_path_lib.dsv'
+[7.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/hook/ld_library_path_lib.sh'
+[7.467s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/bin'
+[7.468s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/lib/pkgconfig/tooru_mobile.pc'
+[7.468s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/lib/python3.10/site-packages'
+[7.468s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/bin'
+[7.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/package.ps1'
+[7.469s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/package.dsv'
+[7.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/package.sh'
+[7.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/package.bash'
+[7.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/package.zsh'
+[7.470s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/colcon-core/packages/tooru_mobile)
+[7.471s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rama/ROS/tooru_ros2_ws/build/tooru_teleop
+[7.480s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tooru_teleop)
+[7.481s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop' for CMake module files
+[7.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rama/ROS/tooru_ros2_ws/build/tooru_teleop
+[7.482s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop' for CMake config files
+[7.482s] Level 1:colcon.colcon_core.shell:create_environment_hook('tooru_teleop', 'cmake_prefix_path')
+[7.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/hook/cmake_prefix_path.ps1'
+[7.483s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/hook/cmake_prefix_path.dsv'
+[7.483s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/hook/cmake_prefix_path.sh'
+[7.483s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/lib'
+[7.483s] Level 1:colcon.colcon_core.shell:create_environment_hook('tooru_teleop', 'ld_library_path_lib')
+[7.484s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/hook/ld_library_path_lib.ps1'
+[7.484s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/hook/ld_library_path_lib.dsv'
+[7.484s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/hook/ld_library_path_lib.sh'
+[7.484s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/bin'
+[7.484s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/lib/pkgconfig/tooru_teleop.pc'
+[7.484s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/lib/python3.10/site-packages'
+[7.485s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/bin'
+[7.485s] INFO:colcon.colcon_core.shell:Creating package script '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/package.ps1'
+[7.486s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/package.dsv'
+[7.486s] INFO:colcon.colcon_core.shell:Creating package script '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/package.sh'
+[7.486s] INFO:colcon.colcon_core.shell:Creating package script '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/package.bash'
+[7.486s] INFO:colcon.colcon_core.shell:Creating package script '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/package.zsh'
+[7.486s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/colcon-core/packages/tooru_teleop)
+[7.500s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tooru_teleop)
+[7.501s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop' for CMake module files
+[7.501s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop' for CMake config files
+[7.502s] Level 1:colcon.colcon_core.shell:create_environment_hook('tooru_teleop', 'cmake_prefix_path')
+[7.502s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/hook/cmake_prefix_path.ps1'
+[7.502s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/hook/cmake_prefix_path.dsv'
+[7.503s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/hook/cmake_prefix_path.sh'
+[7.503s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/lib'
+[7.503s] Level 1:colcon.colcon_core.shell:create_environment_hook('tooru_teleop', 'ld_library_path_lib')
+[7.504s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/hook/ld_library_path_lib.ps1'
+[7.504s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/hook/ld_library_path_lib.dsv'
+[7.504s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/hook/ld_library_path_lib.sh'
+[7.504s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/bin'
+[7.504s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/lib/pkgconfig/tooru_teleop.pc'
+[7.504s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/lib/python3.10/site-packages'
+[7.504s] Level 1:colcon.colcon_core.environment:checking '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/bin'
+[7.505s] INFO:colcon.colcon_core.shell:Creating package script '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/package.ps1'
+[7.505s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/package.dsv'
+[7.506s] INFO:colcon.colcon_core.shell:Creating package script '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/package.sh'
+[7.506s] INFO:colcon.colcon_core.shell:Creating package script '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/package.bash'
+[7.506s] INFO:colcon.colcon_core.shell:Creating package script '/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/package.zsh'
+[7.506s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/colcon-core/packages/tooru_teleop)
+[7.506s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.507s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.507s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.507s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.510s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.510s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.510s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.517s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.518s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rama/ROS/tooru_ros2_ws/install/local_setup.ps1'
+[7.519s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rama/ROS/tooru_ros2_ws/install/_local_setup_util_ps1.py'
+[7.520s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rama/ROS/tooru_ros2_ws/install/setup.ps1'
+[7.520s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rama/ROS/tooru_ros2_ws/install/local_setup.sh'
+[7.521s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rama/ROS/tooru_ros2_ws/install/_local_setup_util_sh.py'
+[7.521s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rama/ROS/tooru_ros2_ws/install/setup.sh'
+[7.522s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rama/ROS/tooru_ros2_ws/install/local_setup.bash'
+[7.522s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rama/ROS/tooru_ros2_ws/install/setup.bash'
+[7.523s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rama/ROS/tooru_ros2_ws/install/local_setup.zsh'
+[7.523s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rama/ROS/tooru_ros2_ws/install/setup.zsh'
