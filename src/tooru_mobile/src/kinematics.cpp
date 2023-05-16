@@ -45,7 +45,7 @@ namespace tooru_mobile
         friend class Kinematics;
     };
 
-class Kinematics
+    class Kinematics
     {
     public:
         class Omnidirectional;
@@ -223,7 +223,7 @@ class Kinematics
         {
             // Setup pub/sub
             twist_sub_ = create_subscription<geometry_msgs::msg::TwistStamped>(TWIST_TOPIC, rclcpp::SystemDefaultsQoS(),
-                                                                               [this](const geometry_msgs::msg::TwistStamped& msg)
+                                                                               [this](const geometry_msgs::msg::TwistStamped &msg)
                                                                                {
                                                                                    return twistCB(msg);
                                                                                });
@@ -231,7 +231,7 @@ class Kinematics
             joint_pub_ = create_publisher<sensor_msgs::msg::JointState>(JOINTSTATE_TOPIC, rclcpp::SystemDefaultsQoS());
         }
 
-        void twistCB(const geometry_msgs::msg::TwistStamped& msg)
+        void twistCB(const geometry_msgs::msg::TwistStamped &msg)
         {
             // Create the messages we might publish
             auto joint_msg = std::make_unique<sensor_msgs::msg::JointState>();

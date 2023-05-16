@@ -1,0 +1,24 @@
+[0.013s] Invoking command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_mobile': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rama/ROS/tooru_ros2_ws/build/tooru_mobile -- -j16 -l16
+[0.049s] [100%] Built target kinematics
+[0.061s] Invoked command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_mobile' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rama/ROS/tooru_ros2_ws/build/tooru_mobile -- -j16 -l16
+[0.082s] Invoking command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_mobile': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rama/ROS/tooru_ros2_ws/build/tooru_mobile
+[0.089s] -- Install configuration: ""
+[0.089s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/lib/libkinematics.so
+[0.089s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/ament_index/resource_index/package_run_dependencies/tooru_mobile
+[0.089s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/ament_index/resource_index/parent_prefix_path/tooru_mobile
+[0.089s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/environment/ament_prefix_path.sh
+[0.090s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/environment/ament_prefix_path.dsv
+[0.090s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/environment/path.sh
+[0.090s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/environment/path.dsv
+[0.090s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/local_setup.bash
+[0.090s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/local_setup.sh
+[0.090s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/local_setup.zsh
+[0.090s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/local_setup.dsv
+[0.090s] -- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/package.dsv
+[0.090s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/ament_index/resource_index/packages/tooru_mobile
+[0.090s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/ament_index/resource_index/rclcpp_components/tooru_mobile
+[0.090s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.090s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/cmake/tooru_mobileConfig.cmake
+[0.090s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/cmake/tooru_mobileConfig-version.cmake
+[0.090s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/package.xml
+[0.111s] Invoked command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_mobile' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rama/ROS/tooru_ros2_ws/build/tooru_mobile

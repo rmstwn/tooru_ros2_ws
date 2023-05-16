@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target kinematics[0m
+[100%] Built target kinematics
+-- Install configuration: ""
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/lib/libkinematics.so
+-- Set runtime path of "/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/lib/libkinematics.so" to ""
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/ament_index/resource_index/package_run_dependencies/tooru_mobile
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/ament_index/resource_index/parent_prefix_path/tooru_mobile
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/environment/ament_prefix_path.sh
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/environment/ament_prefix_path.dsv
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/environment/path.sh
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/environment/path.dsv
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/local_setup.bash
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/local_setup.sh
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/local_setup.zsh
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/local_setup.dsv
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/package.dsv
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/ament_index/resource_index/packages/tooru_mobile
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/ament_index/resource_index/rclcpp_components/tooru_mobile
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/cmake/tooru_mobileConfig.cmake
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/cmake/tooru_mobileConfig-version.cmake
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_mobile/share/tooru_mobile/package.xml

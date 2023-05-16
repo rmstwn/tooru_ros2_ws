@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable read_write_node[0m
+[100%] Built target read_write_node
+-- Install configuration: ""
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/lib/tooru_dynamixel/read_write_node
+-- Set runtime path of "/home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/lib/tooru_dynamixel/read_write_node" to ""
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/ament_index/resource_index/package_run_dependencies/tooru_dynamixel
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/ament_index/resource_index/parent_prefix_path/tooru_dynamixel
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/environment/ament_prefix_path.sh
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/environment/path.sh
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/environment/path.dsv
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/local_setup.bash
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/local_setup.sh
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/local_setup.zsh
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/local_setup.dsv
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/package.dsv
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/ament_index/resource_index/packages/tooru_dynamixel
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/cmake/tooru_dynamixelConfig.cmake
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/cmake/tooru_dynamixelConfig-version.cmake
+-- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/package.xml

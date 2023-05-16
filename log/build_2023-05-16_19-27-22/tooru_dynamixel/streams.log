@@ -1,0 +1,26 @@
+[0.008s] Invoking command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_dynamixel': CMAKE_PREFIX_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk:/home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples:/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop:/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile:/opt/ros/humble /usr/bin/cmake --build /home/rama/ROS/tooru_ros2_ws/build/tooru_dynamixel -- -j16 -l16
+[0.031s] [35m[1mConsolidate compiler generated dependencies of target read_write_node[0m
+[0.043s] [ 50%] [32mBuilding CXX object CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o[0m
+[5.869s] [100%] [32m[1mLinking CXX executable read_write_node[0m
+[6.214s] [100%] Built target read_write_node
+[6.221s] Invoked command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_dynamixel' returned '0': CMAKE_PREFIX_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk:/home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples:/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop:/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile:/opt/ros/humble /usr/bin/cmake --build /home/rama/ROS/tooru_ros2_ws/build/tooru_dynamixel -- -j16 -l16
+[6.243s] Invoking command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_dynamixel': CMAKE_PREFIX_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk:/home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples:/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop:/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile:/opt/ros/humble /usr/bin/cmake --install /home/rama/ROS/tooru_ros2_ws/build/tooru_dynamixel
+[6.247s] -- Install configuration: ""
+[6.247s] -- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/lib/tooru_dynamixel/read_write_node
+[6.250s] -- Set runtime path of "/home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/lib/tooru_dynamixel/read_write_node" to ""
+[6.250s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/ament_index/resource_index/package_run_dependencies/tooru_dynamixel
+[6.250s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/ament_index/resource_index/parent_prefix_path/tooru_dynamixel
+[6.250s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/environment/ament_prefix_path.sh
+[6.250s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/environment/ament_prefix_path.dsv
+[6.250s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/environment/path.sh
+[6.251s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/environment/path.dsv
+[6.251s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/local_setup.bash
+[6.251s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/local_setup.sh
+[6.251s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/local_setup.zsh
+[6.251s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/local_setup.dsv
+[6.251s] -- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/package.dsv
+[6.251s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/ament_index/resource_index/packages/tooru_dynamixel
+[6.251s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/cmake/tooru_dynamixelConfig.cmake
+[6.251s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/cmake/tooru_dynamixelConfig-version.cmake
+[6.251s] -- Up-to-date: /home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel/share/tooru_dynamixel/package.xml
+[6.253s] Invoked command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_dynamixel' returned '0': CMAKE_PREFIX_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk:/home/rama/ROS/tooru_ros2_ws/install/tooru_dynamixel:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples:/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop:/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile:/opt/ros/humble /usr/bin/cmake --install /home/rama/ROS/tooru_ros2_ws/build/tooru_dynamixel

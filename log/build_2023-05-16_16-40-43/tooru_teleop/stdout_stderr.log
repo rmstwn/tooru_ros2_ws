@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target tooru_teleop_input[0m
+[100%] Built target tooru_teleop_input
+-- Install configuration: ""
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/lib/libtooru_teleop_input.so
+-- Set runtime path of "/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/lib/libtooru_teleop_input.so" to ""
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop//launch
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop//launch/teleop.launch.py
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop//launch/__pycache__
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop//launch/__pycache__/teleop.launch.cpython-310.pyc
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop//launch/__pycache__/teleop_launch.cpython-310.pyc
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/ament_index/resource_index/package_run_dependencies/tooru_teleop
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/ament_index/resource_index/parent_prefix_path/tooru_teleop
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/environment/ament_prefix_path.sh
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/environment/ament_prefix_path.dsv
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/environment/path.sh
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/environment/path.dsv
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/local_setup.bash
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/local_setup.sh
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/local_setup.zsh
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/local_setup.dsv
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/package.dsv
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/ament_index/resource_index/packages/tooru_teleop
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/ament_index/resource_index/rclcpp_components/tooru_teleop
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/cmake/tooru_teleopConfig.cmake
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/cmake/tooru_teleopConfig-version.cmake
+-- Installing: /home/rama/ROS/tooru_ros2_ws/install/tooru_teleop/share/tooru_teleop/package.xml

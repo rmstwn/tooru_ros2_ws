@@ -1,0 +1,4 @@
+source;share/tooru_dynamixel/local_setup.bash
+source;share/tooru_dynamixel/local_setup.dsv
+source;share/tooru_dynamixel/local_setup.sh
+source;share/tooru_dynamixel/local_setup.zsh
