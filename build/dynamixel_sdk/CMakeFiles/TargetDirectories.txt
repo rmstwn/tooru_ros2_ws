@@ -1,0 +1,10 @@
+/home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk/CMakeFiles/uninstall.dir
+/home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk/CMakeFiles/dynamixel_sdk_uninstall.dir
+/home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk/CMakeFiles/dynamixel_sdk.dir
+/home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk/CMakeFiles/test.dir
+/home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk/CMakeFiles/edit_cache.dir
+/home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk/CMakeFiles/rebuild_cache.dir
+/home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk/CMakeFiles/list_install_components.dir
+/home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk/CMakeFiles/install.dir
+/home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk/CMakeFiles/install/local.dir
+/home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk/CMakeFiles/install/strip.dir

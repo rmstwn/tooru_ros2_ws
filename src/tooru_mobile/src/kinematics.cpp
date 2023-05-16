@@ -9,7 +9,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include <thread>
 #include <math.h>
-#include <eigen3/Eigen/Dense> 
+#include <eigen3/Eigen/Dense>
 
 // Set up parameters
 const std::string JOINTSTATE_TOPIC = "/joint_state";
@@ -17,95 +17,42 @@ const std::string TWIST_TOPIC = "/twist_cmd";
 
 rclcpp::Clock system_clock(RCL_SYSTEM_TIME);
 
-// bool convertTwistToJoint(const geometry_msgs::msg::TwistStamped& twist,
-//                      std::unique_ptr<sensor_msgs::msg::JointState>& joint)
-// {
-//   // map buttons to twist commands
-//   // twist->twist.linear.z = axes[RIGHT_STICK_Y];
-//   // twist->twist.linear.y = axes[RIGHT_STICK_X];
-
-//   // double lin_x_right = -0.5 * (axes[RIGHT_TRIGGER] - AXIS_DEFAULTS.at(RIGHT_TRIGGER));
-//   // double lin_x_left = 0.5 * (axes[LEFT_TRIGGER] - AXIS_DEFAULTS.at(LEFT_TRIGGER));
-//   // twist->twist.linear.x = lin_x_right + lin_x_left;
-
-//   // twist->twist.angular.y = axes[LEFT_STICK_Y];
-//   // twist->twist.angular.x = axes[LEFT_STICK_X];
-
-//   // double roll_positive = buttons[RIGHT_BUMPER];
-//   // double roll_negative = -1 * (buttons[LEFT_BUMPER]);
-//   // twist->twist.angular.z = roll_positive + roll_negative;
-
-//   twist->twist.linear.x = axes[LEFT_STICK_X];
-//   twist->twist.linear.y = axes[LEFT_STICK_Y];
-//   twist->twist.angular.z = axes[RIGHT_STICK_X];
-
-//   return true;
-// }
+double TargetOdom[] = {0, 0, 0};
+double AxisLength = 0.16;
+double WheelDiameter = 0.1;
+double Delta = 45; // degree
+double Sin = sin(Delta * (M_PI / 180));
+double Cos = cos(Delta * (M_PI / 180));
 
 namespace tooru_mobile
 {
-    class TwistToJointPub : public rclcpp::Node
-    {
-    public:
-        // TwistToJointPub(const rclcpp::NodeOptions& options) : Node("twist_to_joint_publisher", options)
-        TwistToJointPub(const rclcpp::NodeOptions &options) : Node("twist_to_joint_publisher", options)
-        {
-            // Setup pub/sub
-            twist_sub_ = create_subscription<geometry_msgs::msg::TwistStamped>(TWIST_TOPIC, rclcpp::SystemDefaultsQoS(),
-                                                                               [this](const geometry_msgs::msg::TwistStamped::ConstSharedPtr &msg)
-                                                                               {
-                                                                                   return twistCB(msg);
-                                                                               });
-
-            joint_pub_ = create_publisher<sensor_msgs::msg::JointState>(JOINTSTATE_TOPIC, rclcpp::SystemDefaultsQoS());
-        }
-
-        void twistCB(const geometry_msgs::msg::TwistStamped::ConstSharedPtr &msg)
-        {
-            // Create the messages we might publish
-            auto joint_msg = std::make_unique<sensor_msgs::msg::JointState>();
-
-            joint_msg->velocity.resize(4);
-
-            joint_msg->header.frame_id = "Mobile";
-            joint_msg->velocity[0] = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
-            joint_msg->velocity[1] = 1.0;
-            joint_msg->velocity[2] = 1.0;
-            joint_msg->velocity[3] = 1.0;
-            joint_msg->header.stamp = now();
-
-            joint_pub_->publish(std::move(joint_msg));
-        }
-
-    private:
-        rclcpp::Subscription<geometry_msgs::msg::TwistStamped>::SharedPtr twist_sub_;
-        rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr joint_pub_;
-    };
-
     class MobileInfo
     {
     public:
         double Odometry[3];
         double Position[3];
+
+        friend class TwistToJointPub;
+        friend class Kinematics;
     };
 
     class JointState
     {
     public:
         double RPM[4];
+
+        friend class TwistToJointPub;
+        friend class Kinematics;
     };
 
-    double AxisLength = 0.16;
-    double WheelDiameter = 0.1;
-    double Delta = 45; // degree
-    double Sin = sin(Delta * (M_PI / 180));
-    double Cos = cos(Delta * (M_PI / 180));
-
-    class Mobile
+class Kinematics
     {
+    public:
+        class Omnidirectional;
 
         class Omnidirectional
         {
+        public:
             /* Omnidirectional
                robot:	L: AxisLength
 
@@ -165,7 +112,7 @@ namespace tooru_mobile
                     else
                     {
                         // RCLCPP_INFO("invalid joint state delta time: " + dt + " sec");
-                        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "invalid joint state delta time:: '%lu' sec", dt);
+                        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "invalid joint state delta time:: '%f' sec", dt);
                     }
                 }
                 odom[0] = move_vel_x;
@@ -182,7 +129,7 @@ namespace tooru_mobile
                 MobileOmni.Odometry[1] = odom[1];
                 MobileOmni.Odometry[2] = odom[2];
 
-                //MobileOmni = cpose;
+                // MobileOmni = cpose;
 
                 MobileOmni.Position[0] = cpose[0];
                 MobileOmni.Position[1] = cpose[1];
@@ -193,66 +140,69 @@ namespace tooru_mobile
 
             JointState InverseKinematics(double odom[])
             {
-                Eigen::
-                double J[3][4];
-                double JJ[3][3];
+                Eigen::MatrixXd J(3, 4);
+                Eigen::MatrixXd JJ(3, 3);
 
-                double JTranspose[4][3];
-                double JInverse[3][3];
-                double JPseudo[4][3];
+                Eigen::MatrixXd JTranspose(4, 3);
+                Eigen::MatrixXd JInverse(3, 3);
+                Eigen::MatrixXd JPseudo(4, 3);
 
-                std::vector<double> Odom[3];
-                std::vector<double> Result[4];
+                Eigen::Vector3d Odom;
+                Eigen::Vector4d Result;
 
-                double rpm[] = { 0, 0, 0, 0 };
+                double rpm[] = {0, 0, 0, 0};
 
-                J[0][0] = (double)Sin;
-                J[0][1] = -(double)Cos;
-                J[0][2] = -(double)Sin;
-                J[0][3] = (double)Cos;
+                J << (double)Sin, -(double)Cos, -(double)Sin, (double)Cos,
+                    -(double)Cos, -(double)Sin, (double)Cos, (double)Sin,
+                    1, 1, 1, 1;
 
-                J[1][0] = -(double)Cos;
-                J[1][1] = -(double)Sin;
-                J[1][2] = (double)Cos;
-                J[1][3] = (double)Sin;
-                
-                J[2][0] = 1;
-                J[2][1] = 1;
-                J[2][2] = 1;
-                J[2][3] = 1;
+                // J[0, 0] = (double)Sin;
+                // J[0, 1] = -(double)Cos;
+                // J[0, 2] = -(double)Sin;
+                // J[0, 3] = (double)Cos;
 
-                //J.ConsoleWrite();
-                
-                transpose(J, JTranspose);
+                // J[1, 0] = -(double)Cos;
+                // J[1, 1] = -(double)Sin;
+                // J[1, 2] = (double)Cos;
+                // J[1, 3] = (double)Sin;
 
-                // JJ.Set = J.Times(JTranspose.Get);
-                // //JJ.ConsoleWrite();
+                // J[2, 0] = 1;
+                // J[2, 1] = 1;
+                // J[2, 2] = 1;
+                // J[2, 3] = 1;
 
-                // JInverse.Set = JJ.Inverse;
-                // //JInverse.ConsoleWrite();
+                // J.ConsoleWrite();
 
-                // JPseudo.Set = JTranspose.Times(JInverse.Get);
-                // //JPseudo.ConsoleWrite();
+                JTranspose = J.transpose();
 
-                // Odom[0] = (float)odom[0];
-                // Odom[1] = (float)odom[1];
-                // Odom[2] = (float)odom[2];
+                JJ = J * JTranspose;
 
-                // //Odom.ConsoleWrite();
+                JInverse = JJ.inverse();
 
-                // Result.Set = JPseudo.Times(Odom.Get);
-                // //Result.ConsoleWrite();
+                JPseudo = JTranspose * JInverse;
 
-                // rpm[0] = (double)(Result[0] / (2 * Math.PI * (GlobalsOmnidirectional.WheelDiameter / 2)) * 60);
-                // rpm[1] = (double)(Result[1] / (2 * Math.PI * (GlobalsOmnidirectional.WheelDiameter / 2)) * 60);
-                // rpm[2] = (double)(Result[2] / (2 * Math.PI * (GlobalsOmnidirectional.WheelDiameter / 2)) * 60);
-                // rpm[3] = (double)(Result[3] / (2 * Math.PI * (GlobalsOmnidirectional.WheelDiameter / 2)) * 60);
+                Odom[0] = (float)odom[0];
+                Odom[1] = (float)odom[1];
+                Odom[2] = (float)odom[2];
 
-                // JointOmni.RPM = rpm;
+                // Odom.ConsoleWrite();
 
-                // //Console.WriteLine("RPM:{0}, RPM:{1}, RPM:{2}, RPM:{3}", rpm[0], rpm[1], rpm[2], rpm[3]);
+                Result = JPseudo * Odom;
+                // Result.ConsoleWrite();
 
-                // return JointOmni;
+                rpm[0] = (double)(Result[0] / (2 * M_PI * (WheelDiameter / 2)) * 60);
+                rpm[1] = (double)(Result[1] / (2 * M_PI * (WheelDiameter / 2)) * 60);
+                rpm[2] = (double)(Result[2] / (2 * M_PI * (WheelDiameter / 2)) * 60);
+                rpm[3] = (double)(Result[3] / (2 * M_PI * (WheelDiameter / 2)) * 60);
+
+                JointOmni.RPM[0] = rpm[0];
+                JointOmni.RPM[1] = rpm[1];
+                JointOmni.RPM[2] = rpm[2];
+                JointOmni.RPM[3] = rpm[3];
+
+                // Console.WriteLine("RPM:{0}, RPM:{1}, RPM:{2}, RPM:{3}", rpm[0], rpm[1], rpm[2], rpm[3]);
+
+                return JointOmni;
             }
 
             void transpose(double A[3][4], double B[4][3])
@@ -262,10 +212,66 @@ namespace tooru_mobile
                     for (j = 0; j < 4; j++)
                         B[i][j] = A[j][i];
             }
-            
         };
     };
 
+    class TwistToJointPub : public rclcpp::Node
+    {
+    public:
+        // TwistToJointPub(const rclcpp::NodeOptions& options) : Node("twist_to_joint_publisher", options)
+        TwistToJointPub(const rclcpp::NodeOptions &options) : Node("twist_to_joint_publisher", options)
+        {
+            // Setup pub/sub
+            twist_sub_ = create_subscription<geometry_msgs::msg::TwistStamped>(TWIST_TOPIC, rclcpp::SystemDefaultsQoS(),
+                                                                               [this](const geometry_msgs::msg::TwistStamped& msg)
+                                                                               {
+                                                                                   return twistCB(msg);
+                                                                               });
+
+            joint_pub_ = create_publisher<sensor_msgs::msg::JointState>(JOINTSTATE_TOPIC, rclcpp::SystemDefaultsQoS());
+        }
+
+        void twistCB(const geometry_msgs::msg::TwistStamped& msg)
+        {
+            // Create the messages we might publish
+            auto joint_msg = std::make_unique<sensor_msgs::msg::JointState>();
+
+            TargetOdom[0] = msg.twist.linear.x;
+            TargetOdom[1] = msg.twist.linear.y;
+            TargetOdom[2] = msg.twist.angular.z;
+
+            OmniJointState = Omni.InverseKinematics(TargetOdom);
+
+            // OmniJointState.RPM[0] = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
+            // OmniJointState.RPM[1] = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
+            // OmniJointState.RPM[2] = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
+            // OmniJointState.RPM[3] = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
+
+            joint_msg->velocity.resize(4);
+
+            joint_msg->header.frame_id = "Mobile";
+            joint_msg->velocity[0] = OmniJointState.RPM[0];
+            joint_msg->velocity[1] = OmniJointState.RPM[1];
+            joint_msg->velocity[2] = OmniJointState.RPM[2];
+            joint_msg->velocity[3] = OmniJointState.RPM[3];
+            // joint_msg->velocity[0] = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
+            // joint_msg->velocity[1] = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
+            // joint_msg->velocity[2] = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
+            // joint_msg->velocity[3] = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
+
+            joint_msg->header.stamp = now();
+
+            joint_pub_->publish(std::move(joint_msg));
+        }
+
+    private:
+        MobileInfo OmniMobileInfo;
+        JointState OmniJointState;
+        Kinematics::Omnidirectional Omni;
+
+        rclcpp::Subscription<geometry_msgs::msg::TwistStamped>::SharedPtr twist_sub_;
+        rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr joint_pub_;
+    };
 }
 
 // int main(int argc, char * argv[])

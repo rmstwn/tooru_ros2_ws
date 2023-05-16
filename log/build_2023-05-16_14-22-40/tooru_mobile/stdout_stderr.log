@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target kinematics[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/kinematics.dir/src/kinematics.cpp.o[0m
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:112:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ktooru_mobile::MobileInfo tooru_mobile::Kinematics::Omnidirectional::ForwardKinematics(double*)[m[K’ cannot be overloaded with ‘[01m[Ktooru_mobile::MobileInfo tooru_mobile::Kinematics::Omnidirectional::ForwardKinematics(double*)[m[K’
+  112 |             MobileInfo [01;31m[KForwardKinematics[m[K(double rpm[])
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:83:24:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Ktooru_mobile::MobileInfo tooru_mobile::Kinematics::Omnidirectional::ForwardKinematics(double*)[m[K’
+   83 |             MobileInfo [01;36m[KForwardKinematics[m[K(double rpm[]);
+      |                        [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:171:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ktooru_mobile::JointState tooru_mobile::Kinematics::Omnidirectional::InverseKinematics(double*)[m[K’ cannot be overloaded with ‘[01m[Ktooru_mobile::JointState tooru_mobile::Kinematics::Omnidirectional::InverseKinematics(double*)[m[K’
+  171 |             JointState [01;31m[KInverseKinematics[m[K(double odom[])
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:84:24:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Ktooru_mobile::JointState tooru_mobile::Kinematics::Omnidirectional::InverseKinematics(double*)[m[K’
+   84 |             JointState [01;36m[KInverseKinematics[m[K(double odom[]);
+      |                        [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:[m[K In member function ‘[01m[Kvoid tooru_mobile::TwistToJointPub::twistCB(const ConstSharedPtr&)[m[K’:
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:264:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  264 |         void twistCB([01;35m[Kconst geometry_msgs::msg::TwistStamped::ConstSharedPtr &msg[m[K)
+      |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/kinematics.dir/build.make:76: CMakeFiles/kinematics.dir/src/kinematics.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/kinematics.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

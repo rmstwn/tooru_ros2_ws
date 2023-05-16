@@ -1,0 +1,74 @@
+[0.008s] Invoking command in '/home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk_examples': AMENT_PREFIX_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk:/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop:/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile:/opt/ros/humble LD_LIBRARY_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/rama/ROS/tooru_ros2_ws/src/DynamixelSDK/dynamixel_sdk_examples -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples
+[0.042s] -- The C compiler identification is GNU 11.3.0
+[0.078s] -- The CXX compiler identification is GNU 11.3.0
+[0.083s] -- Detecting C compiler ABI info
+[0.124s] -- Detecting C compiler ABI info - done
+[0.129s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.129s] -- Detecting C compile features
+[0.129s] -- Detecting C compile features - done
+[0.131s] -- Detecting CXX compiler ABI info
+[0.177s] -- Detecting CXX compiler ABI info - done
+[0.182s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.182s] -- Detecting CXX compile features
+[0.182s] -- Detecting CXX compile features - done
+[0.184s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.284s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.323s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.338s] -- Found dynamixel_sdk: 3.7.60 (/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake)
+[0.339s] -- Found dynamixel_sdk_custom_interfaces: 3.7.60 (/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake)
+[0.360s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.363s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.368s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.376s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.388s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.432s] -- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+[0.467s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.469s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.523s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.539s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.568s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.574s] -- Looking for pthread.h
+[0.625s] -- Looking for pthread.h - found
+[0.625s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.681s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.681s] -- Found Threads: TRUE  
+[0.779s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.840s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.841s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.841s] -- Configured cppcheck include dirs: /home/rama/ROS/tooru_ros2_ws/src/DynamixelSDK/dynamixel_sdk_examples/include
+[0.841s] -- Configured cppcheck exclude dirs and/or files: 
+[0.841s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.841s] -- Configured cpplint exclude dirs and/or files: 
+[0.842s] -- Added test 'lint_cmake' to check CMake code style
+[0.842s] -- Added test 'uncrustify' to check C / C++ code style
+[0.842s] -- Configured uncrustify additional arguments: 
+[0.842s] -- Added test 'xmllint' to check XML markup files
+[0.843s] -- Configuring done
+[0.849s] -- Generating done
+[0.850s] -- Build files have been written to: /home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk_examples
+[0.856s] Invoked command in '/home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk_examples' returned '0': AMENT_PREFIX_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk:/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop:/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile:/opt/ros/humble LD_LIBRARY_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/rama/ROS/tooru_ros2_ws/src/DynamixelSDK/dynamixel_sdk_examples -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples
+[0.857s] Invoking command in '/home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk_examples': AMENT_PREFIX_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk:/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop:/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile:/opt/ros/humble LD_LIBRARY_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk_examples -- -j16 -l16
+[0.886s] [ 50%] [32mBuilding CXX object CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o[0m
+[6.769s] [100%] [32m[1mLinking CXX executable read_write_node[0m
+[7.120s] [100%] Built target read_write_node
+[7.133s] Invoked command in '/home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk_examples' returned '0': AMENT_PREFIX_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk:/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop:/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile:/opt/ros/humble LD_LIBRARY_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk_examples -- -j16 -l16
+[7.174s] Invoking command in '/home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk_examples': AMENT_PREFIX_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk:/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop:/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile:/opt/ros/humble LD_LIBRARY_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk_examples
+[7.184s] -- Install configuration: ""
+[7.185s] -- Execute custom install script
+[7.185s] -- Symlinking: /home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/read_write_node
+[7.199s] -- Symlinking: /home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_examples
+[7.211s] -- Symlinking: /home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk_examples
+[7.224s] -- Symlinking: /home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/ament_prefix_path.sh
+[7.236s] -- Symlinking: /home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/ament_prefix_path.dsv
+[7.249s] -- Symlinking: /home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/path.sh
+[7.261s] -- Symlinking: /home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/path.dsv
+[7.273s] -- Symlinking: /home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.bash
+[7.285s] -- Symlinking: /home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.sh
+[7.299s] -- Symlinking: /home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.zsh
+[7.313s] -- Symlinking: /home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.dsv
+[7.328s] -- Symlinking: /home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.dsv
+[7.343s] -- Symlinking: /home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples/share/ament_index/resource_index/packages/dynamixel_sdk_examples
+[7.358s] -- Symlinking: /home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/cmake/dynamixel_sdk_examplesConfig.cmake
+[7.373s] -- Symlinking: /home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/cmake/dynamixel_sdk_examplesConfig-version.cmake
+[7.389s] -- Symlinking: /home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.xml
+[7.415s] Invoked command in '/home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk_examples' returned '0': AMENT_PREFIX_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk:/home/rama/ROS/tooru_ros2_ws/install/tooru_teleop:/home/rama/ROS/tooru_ros2_ws/install/tooru_mobile:/opt/ros/humble LD_LIBRARY_PATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rama/ROS/tooru_ros2_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rama/ROS/tooru_ros2_ws/build/dynamixel_sdk_examples

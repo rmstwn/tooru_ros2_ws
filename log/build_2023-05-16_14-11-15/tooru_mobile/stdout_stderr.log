@@ -1,0 +1,83 @@
+[35m[1mConsolidate compiler generated dependencies of target kinematics[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/kinematics.dir/src/kinematics.cpp.o[0m
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:89:9:[m[K [01;31m[Kerror: [m[K‘[01m[KMobileInfo[m[K’ does not name a type
+   89 |         [01;31m[KMobileInfo[m[K MobileInfo1;
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:90:9:[m[K [01;31m[Kerror: [m[K‘[01m[KJointState[m[K’ does not name a type
+   90 |         [01;31m[KJointState[m[K JointState1;
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:91:9:[m[K [01;31m[Kerror: [m[K‘[01m[KKinematics[m[K’ does not name a type
+   91 |         [01;31m[KKinematics[m[K::Omnidirectional Omni;
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:[m[K In member function ‘[01m[Kvoid tooru_mobile::TwistToJointPub::twistCB(const ConstSharedPtr&)[m[K’:
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:74:13:[m[K [01;31m[Kerror: [m[K‘[01m[KJointState1[m[K’ was not declared in this scope
+   74 |             [01;31m[KJointState1[m[K = Omni.InverseKinematics(TargetOdom);
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:74:27:[m[K [01;31m[Kerror: [m[K‘[01m[KOmni[m[K’ was not declared in this scope
+   74 |             JointState1 = [01;31m[KOmni[m[K.InverseKinematics(TargetOdom);
+      |                           [01;31m[K^~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:65:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   65 |         void twistCB([01;35m[Kconst geometry_msgs::msg::TwistStamped::ConstSharedPtr &msg[m[K)
+      |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:[m[K At global scope:
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:157:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ktooru_mobile::MobileInfo tooru_mobile::Kinematics::Omnidirectional::ForwardKinematics(double*)[m[K’ cannot be overloaded with ‘[01m[Ktooru_mobile::MobileInfo tooru_mobile::Kinematics::Omnidirectional::ForwardKinematics(double*)[m[K’
+  157 |             MobileInfo [01;31m[KForwardKinematics[m[K(double rpm[])
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:128:24:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Ktooru_mobile::MobileInfo tooru_mobile::Kinematics::Omnidirectional::ForwardKinematics(double*)[m[K’
+  128 |             MobileInfo [01;36m[KForwardKinematics[m[K(double rpm[]);
+      |                        [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:216:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ktooru_mobile::JointState tooru_mobile::Kinematics::Omnidirectional::InverseKinematics(double*)[m[K’ cannot be overloaded with ‘[01m[Ktooru_mobile::JointState tooru_mobile::Kinematics::Omnidirectional::InverseKinematics(double*)[m[K’
+  216 |             JointState [01;31m[KInverseKinematics[m[K(double odom[])
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:129:24:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Ktooru_mobile::JointState tooru_mobile::Kinematics::Omnidirectional::InverseKinematics(double*)[m[K’
+  129 |             JointState [01;36m[KInverseKinematics[m[K(double odom[]);
+      |                        [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:[m[K In member function ‘[01m[Ktooru_mobile::JointState tooru_mobile::Kinematics::Omnidirectional::InverseKinematics(double*)[m[K’:
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:230:19:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  230 |                 J[[01;35m[K0[m[K, 0] = (double)Sin;
+      |                   [01;35m[K^[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:231:19:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  231 |                 J[[01;35m[K0[m[K, 1] = -(double)Cos;
+      |                   [01;35m[K^[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:232:19:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  232 |                 J[[01;35m[K0[m[K, 2] = -(double)Sin;
+      |                   [01;35m[K^[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:233:19:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  233 |                 J[[01;35m[K0[m[K, 3] = (double)Cos;
+      |                   [01;35m[K^[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:235:19:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  235 |                 J[[01;35m[K1[m[K, 0] = -(double)Cos;
+      |                   [01;35m[K^[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:236:19:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  236 |                 J[[01;35m[K1[m[K, 1] = -(double)Sin;
+      |                   [01;35m[K^[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:237:19:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  237 |                 J[[01;35m[K1[m[K, 2] = (double)Cos;
+      |                   [01;35m[K^[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:238:19:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  238 |                 J[[01;35m[K1[m[K, 3] = (double)Sin;
+      |                   [01;35m[K^[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:240:19:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  240 |                 J[[01;35m[K2[m[K, 0] = 1;
+      |                   [01;35m[K^[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:241:19:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  241 |                 J[[01;35m[K2[m[K, 1] = 1;
+      |                   [01;35m[K^[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:242:19:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  242 |                 J[[01;35m[K2[m[K, 2] = 1;
+      |                   [01;35m[K^[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:243:19:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  243 |                 J[[01;35m[K2[m[K, 3] = 1;
+      |                   [01;35m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:164[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:12[m[K:
+/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘[01m[KEigen::DenseCoeffsBase<Derived, 1>::Scalar& Eigen::DenseCoeffsBase<Derived, 1>::operator[](Eigen::Index) [with Derived = Eigen::Matrix<double, -1, -1>; Eigen::DenseCoeffsBase<Derived, 1>::Scalar = double; Eigen::Index = long int][m[K’:
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:230:23:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:408:7:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: THE_BRACKET_OPERATOR_IS_ONLY_FOR_VECTORS__USE_THE_PARENTHESIS_OPERATOR_INSTEAD
+  408 |       [01;31m[KEIGEN_STATIC_ASSERT[m[K(Derived::IsVectorAtCompileTime,
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:408:7:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::Matrix<double, -1, -1>::IsVectorAtCompileTime[m[K’ evaluates to false
+gmake[2]: *** [CMakeFiles/kinematics.dir/build.make:76: CMakeFiles/kinematics.dir/src/kinematics.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/kinematics.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

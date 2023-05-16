@@ -1,0 +1,17 @@
+[0.010s] Invoking command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_mobile': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rama/ROS/tooru_ros2_ws/build/tooru_mobile -- -j16 -l16
+[0.034s] [35m[1mConsolidate compiler generated dependencies of target kinematics[0m
+[0.059s] [ 50%] [32mBuilding CXX object CMakeFiles/kinematics.dir/src/kinematics.cpp.o[0m
+[1.989s] [01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:[m[K In lambda function:
+[1.989s] [01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:228:99:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst ConstSharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<const geometry_msgs::msg::TwistStamped_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst TwistStamped&[m[K’ {aka ‘[01m[Kconst geometry_msgs::msg::TwistStamped_<std::allocator<void> >&[m[K’}
+[1.989s]   228 |                                                                            return twistCB([01;31m[Kmsg[m[K);
+[1.989s]       |                                                                                           [01;31m[K^~~[m[K
+[1.989s]       |                                                                                           [01;31m[K|[m[K
+[1.989s]       |                                                                                           [01;31m[Kconst ConstSharedPtr {aka const std::shared_ptr<const geometry_msgs::msg::TwistStamped_<std::allocator<void> > >}[m[K
+[1.989s] 
+[1.989s] [01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:234:62:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid tooru_mobile::TwistToJointPub::twistCB(const TwistStamped&)[m[K’
+[1.989s]   234 |         void twistCB([01;36m[Kconst geometry_msgs::msg::TwistStamped& msg[m[K)
+[1.989s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[4.338s] gmake[2]: *** [CMakeFiles/kinematics.dir/build.make:76: CMakeFiles/kinematics.dir/src/kinematics.cpp.o] Error 1
+[4.338s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/kinematics.dir/all] Error 2
+[4.338s] gmake: *** [Makefile:146: all] Error 2
+[4.341s] Invoked command in '/home/rama/ROS/tooru_ros2_ws/build/tooru_mobile' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rama/ROS/tooru_ros2_ws/build/tooru_mobile -- -j16 -l16

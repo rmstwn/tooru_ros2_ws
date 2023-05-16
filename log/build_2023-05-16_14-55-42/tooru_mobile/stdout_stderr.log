@@ -1,0 +1,15 @@
+[35m[1mConsolidate compiler generated dependencies of target kinematics[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/kinematics.dir/src/kinematics.cpp.o[0m
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:[m[K In lambda function:
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:228:99:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst ConstSharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<const geometry_msgs::msg::TwistStamped_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst TwistStamped&[m[K’ {aka ‘[01m[Kconst geometry_msgs::msg::TwistStamped_<std::allocator<void> >&[m[K’}
+  228 |                                                                            return twistCB([01;31m[Kmsg[m[K);
+      |                                                                                           [01;31m[K^~~[m[K
+      |                                                                                           [01;31m[K|[m[K
+      |                                                                                           [01;31m[Kconst ConstSharedPtr {aka const std::shared_ptr<const geometry_msgs::msg::TwistStamped_<std::allocator<void> > >}[m[K
+
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:234:62:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid tooru_mobile::TwistToJointPub::twistCB(const TwistStamped&)[m[K’
+  234 |         void twistCB([01;36m[Kconst geometry_msgs::msg::TwistStamped& msg[m[K)
+      |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/kinematics.dir/build.make:76: CMakeFiles/kinematics.dir/src/kinematics.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/kinematics.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

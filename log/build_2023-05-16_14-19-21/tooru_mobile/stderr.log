@@ -1,0 +1,38 @@
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:91:9:[m[K [01;31m[Kerror: [m[K‘[01m[KMobileInfo[m[K’ does not name a type
+   91 |         [01;31m[KMobileInfo[m[K MobileInfo1;
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:92:9:[m[K [01;31m[Kerror: [m[K‘[01m[KJointState[m[K’ does not name a type
+   92 |         [01;31m[KJointState[m[K JointState1;
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:93:21:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass tooru_mobile::Kinematics[m[K’
+   93 |         Kinematics::[01;31m[KOmnidirectional[m[K Omni;
+      |                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:49:11:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass tooru_mobile::Kinematics[m[K’
+   49 |     class [01;36m[KKinematics[m[K;
+      |           [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:[m[K In member function ‘[01m[Kvoid tooru_mobile::TwistToJointPub::twistCB(const ConstSharedPtr&)[m[K’:
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:76:13:[m[K [01;31m[Kerror: [m[K‘[01m[KJointState1[m[K’ was not declared in this scope
+   76 |             [01;31m[KJointState1[m[K = Omni.InverseKinematics(TargetOdom);
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:76:27:[m[K [01;31m[Kerror: [m[K‘[01m[KOmni[m[K’ was not declared in this scope
+   76 |             JointState1 = [01;31m[KOmni[m[K.InverseKinematics(TargetOdom);
+      |                           [01;31m[K^~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:67:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   67 |         void twistCB([01;35m[Kconst geometry_msgs::msg::TwistStamped::ConstSharedPtr &msg[m[K)
+      |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:[m[K At global scope:
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:159:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ktooru_mobile::MobileInfo tooru_mobile::Kinematics::Omnidirectional::ForwardKinematics(double*)[m[K’ cannot be overloaded with ‘[01m[Ktooru_mobile::MobileInfo tooru_mobile::Kinematics::Omnidirectional::ForwardKinematics(double*)[m[K’
+  159 |             MobileInfo [01;31m[KForwardKinematics[m[K(double rpm[])
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:130:24:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Ktooru_mobile::MobileInfo tooru_mobile::Kinematics::Omnidirectional::ForwardKinematics(double*)[m[K’
+  130 |             MobileInfo [01;36m[KForwardKinematics[m[K(double rpm[]);
+      |                        [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:218:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ktooru_mobile::JointState tooru_mobile::Kinematics::Omnidirectional::InverseKinematics(double*)[m[K’ cannot be overloaded with ‘[01m[Ktooru_mobile::JointState tooru_mobile::Kinematics::Omnidirectional::InverseKinematics(double*)[m[K’
+  218 |             JointState [01;31m[KInverseKinematics[m[K(double odom[])
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rama/ROS/tooru_ros2_ws/src/tooru_mobile/src/kinematics.cpp:131:24:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Ktooru_mobile::JointState tooru_mobile::Kinematics::Omnidirectional::InverseKinematics(double*)[m[K’
+  131 |             JointState [01;36m[KInverseKinematics[m[K(double odom[]);
+      |                        [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/kinematics.dir/build.make:76: CMakeFiles/kinematics.dir/src/kinematics.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/kinematics.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
