@@ -1,6 +1,6 @@
 # generated from ament_cmake_export_dependencies/cmake/ament_cmake_export_dependencies-extras.cmake.in
 
-set(_exported_dependencies "eigen3_cmake_module;Eigen3")
+set(_exported_dependencies "eigen3_cmake_module")
 
 find_package(ament_cmake_libraries QUIET REQUIRED)
 

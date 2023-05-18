@@ -32,8 +32,15 @@ def generate_launch_description():
         output="screen",
     )
 
+    dynamixel_node = launch_ros.actions.Node(
+        package="tooru_dynamixel",
+        executable="dynamixel_node",
+        output="screen",
+    )
+
     return launch.LaunchDescription(
         [
+            dynamixel_node,
             container,
         ]
     )

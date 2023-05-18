@@ -267,11 +267,6 @@ namespace tooru_mobile
             joint_msg->header.stamp = now();
 
             dynamixel_msg->velocity.resize(4);
-            
-            // dynamixel_msg->id[0] = 11;
-            // dynamixel_msg->id[1] = 12;
-            // dynamixel_msg->id[2] = 13;
-            // dynamixel_msg->id[3] = 14;
 
             dynamixel_msg->id = {11, 12, 13, 14};
 
