@@ -14,8 +14,8 @@ find_package(rclcpp REQUIRED)
 include_directories(include)
 
 # Build
-add_executable(read_write_node src/read_write_node.cpp)
-ament_target_dependencies(read_write_node
+add_executable(dynamixel_node src/dynamixel_node.cpp)
+ament_target_dependencies(dynamixel_node
   dynamixel_sdk_custom_interfaces
   dynamixel_sdk
   rclcpp
@@ -23,7 +23,7 @@ ament_target_dependencies(read_write_node
 
 # Install
 install(TARGETS
-  read_write_node
+  dynamixel_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
