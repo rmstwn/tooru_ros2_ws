@@ -10,10 +10,13 @@
 #include <thread>
 #include <math.h>
 #include <eigen3/Eigen/Dense>
+#include "dynamixel_sdk_custom_interfaces/msg/set_velocity.hpp"
+#include "dynamixel_sdk_custom_interfaces/srv/get_velocity.hpp"
 
 // Set up parameters
 const std::string JOINTSTATE_TOPIC = "/joint_state";
 const std::string TWIST_TOPIC = "/twist_cmd";
+const std::string DYNAMIXEL_TOPIC = "/set_velocity";
 
 rclcpp::Clock system_clock(RCL_SYSTEM_TIME);
 
@@ -229,13 +232,15 @@ namespace tooru_mobile
                                                                                });
 
             joint_pub_ = create_publisher<sensor_msgs::msg::JointState>(JOINTSTATE_TOPIC, rclcpp::SystemDefaultsQoS());
+            dynamixel_pub_ = create_publisher<dynamixel_sdk_custom_interfaces::msg::SetVelocity>(DYNAMIXEL_TOPIC, rclcpp::SystemDefaultsQoS());
         }
 
         void twistCB(const geometry_msgs::msg::TwistStamped &msg)
         {
             // Create the messages we might publish
             auto joint_msg = std::make_unique<sensor_msgs::msg::JointState>();
-
+            auto dynamixel_msg = std::make_unique<dynamixel_sdk_custom_interfaces::msg::SetVelocity>();
+            
             TargetOdom[0] = msg.twist.linear.x;
             TargetOdom[1] = msg.twist.linear.y;
             TargetOdom[2] = msg.twist.angular.z;
@@ -261,7 +266,23 @@ namespace tooru_mobile
 
             joint_msg->header.stamp = now();
 
+            dynamixel_msg->velocity.resize(4);
+            
+            // dynamixel_msg->id[0] = 11;
+            // dynamixel_msg->id[1] = 12;
+            // dynamixel_msg->id[2] = 13;
+            // dynamixel_msg->id[3] = 14;
+
+            dynamixel_msg->id = {11, 12, 13, 14};
+
+            dynamixel_msg->velocity[0] = OmniJointState.RPM[0];
+            dynamixel_msg->velocity[1] = OmniJointState.RPM[1];
+            dynamixel_msg->velocity[2] = OmniJointState.RPM[2];
+            dynamixel_msg->velocity[3] = OmniJointState.RPM[3];
+
+
             joint_pub_->publish(std::move(joint_msg));
+            dynamixel_pub_->publish(std::move(dynamixel_msg));
         }
 
     private:
@@ -271,6 +292,7 @@ namespace tooru_mobile
 
         rclcpp::Subscription<geometry_msgs::msg::TwistStamped>::SharedPtr twist_sub_;
         rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr joint_pub_;
+        rclcpp::Publisher<dynamixel_sdk_custom_interfaces::msg::SetVelocity>::SharedPtr dynamixel_pub_;
     };
 }
 

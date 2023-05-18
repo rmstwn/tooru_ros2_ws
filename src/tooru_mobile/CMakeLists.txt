@@ -13,6 +13,8 @@ set(THIS_PACKAGE_INCLUDE_DEPENDS
   std_msgs
   Eigen3
   eigen3_cmake_module
+  dynamixel_sdk_custom_interfaces
+  dynamixel_sdk
 )
 
 # find dependencies
@@ -32,10 +34,20 @@ add_library(kinematics SHARED src/kinematics.cpp)
 ament_target_dependencies(kinematics PUBLIC ${THIS_PACKAGE_INCLUDE_DEPENDS})
 rclcpp_components_register_nodes(kinematics "tooru_mobile::TwistToJointPub")
 
-ament_target_dependencies(kinematics Eigen3)
+# ament_target_dependencies(kinematics
+#   dynamixel_sdk_custom_interfaces
+#   dynamixel_sdk
+#   rclcpp
+#   Eigen3
+#   eigen3_cmake_module
+#   dynamixel_sdk_custom_interfaces
+#   dynamixel_sdk
+#   ${THIS_PACKAGE_INCLUDE_DEPENDS}
+# )
 
+# ament_target_dependencies(kinematics Eigen3)
 ament_export_dependencies(eigen3_cmake_module)
-ament_export_dependencies(Eigen3)
+
 
 # install(TARGETS
 #   kinematics
